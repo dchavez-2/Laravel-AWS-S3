@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PhotosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,4 +17,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+Route::controller(PhotosController::class)->group(function () {
+    Route::get('/photos', 'getPhotos');
+    Route::post('/photo', 'createPhoto');
+    Route::post('/update-photo', 'updatePhoto');
+    Route::post('/delete-photo', 'deletePhoto');
 });
