@@ -9,7 +9,7 @@ This is a repository used as a model to establish a connection between Laravel a
 ## Prerequisites:
 
 * Have an AWS account.
-* Have a bucket created within AWS.
+* Have a bucket created with in AWS.
 * Define the environment variables in the .env file (AWS, DB).
 
 ## Commands to use:
