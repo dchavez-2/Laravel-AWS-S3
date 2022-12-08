@@ -14,7 +14,7 @@ This is a repository used as a model to establish a connection between Laravel a
 
 ## Commands to use:
 
-**install dependencies:**
+**Install dependencies:**
 
 composer install
 
